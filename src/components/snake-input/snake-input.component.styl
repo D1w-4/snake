@@ -1,0 +1,21 @@
+@require 'styles/config/vars'
+
+.snake-input
+    &__label
+        display block
+        color $color-dark-gray
+        margin-bottom 4px
+    &__fild
+        width 100%;
+        border none
+        border-bottom 1px solid $color-black
+        font-size $font-size-base
+        appearance none
+        outline none
+        transition border-bottom-width 0.3s $material-easing
+        background transparent
+        &:focus
+            border-bottom-width 2px
+        &::-webkit-input-placeholder
+            font-size $font-size-base
+            color $color-black

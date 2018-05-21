@@ -1,0 +1,10 @@
+.idea
+.vscode
+*.iml
+/node_modules/
+npm-debug.log*
+params.yml
+yarn-error.log
+target
+.project
+.DS_Store

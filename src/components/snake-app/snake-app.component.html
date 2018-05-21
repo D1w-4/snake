@@ -1,0 +1,46 @@
+<div class="snake-app__controll">
+    <snake-input onchange="this.$SnakeScope.setCountRow(this.value)"
+                 max="40"
+                 min="1"
+                 class="snake-app__fild"
+                 label="Строка"
+                 value="5"
+    ></snake-input>
+
+    <snake-input onchange="this.$SnakeScope.setCountCol(this.value)"
+                 max="40"
+                 min="1"
+                 class="snake-app__fild"
+                 label="Столбец"
+                 value="5"
+    ></snake-input>
+
+    <snake-btn class="snake-app__btn"
+               id="snake-refresh"
+               onclick="this.$SnakeScope.refreshMatrix()"
+    >Обновить
+    </snake-btn>
+
+    <div class="snake-app__count-domains">
+        <snake-btn class="snake-app__btn"
+                   onclick="this.$SnakeScope.updateCountDomain()"
+        >
+            Посчитать домены
+        </snake-btn>
+        Количество доменов: <span id="snake-app-count-domain">0</span>
+    </div>
+    <snake-input id="snake-app-rand-chance"
+                 class="snake-app__fild"
+                 max="99"
+                 min="1"
+                 value="50"
+                 label="Вероятность"></snake-input>
+
+    <snake-btn onclick="this.$SnakeScope.randCalcMatrix()" id="snake-rand-calc">
+        Авто
+    </snake-btn>
+</div>
+<div class="snake-app__result">
+    <snake-matrix id="snake-matrix" class="snake-app__matrix"></snake-matrix>
+    <snake-history id="snake-history" class="snake-app__history"></snake-history>
+</div>

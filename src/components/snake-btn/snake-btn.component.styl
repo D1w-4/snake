@@ -1,0 +1,19 @@
+@require 'styles/config/vars'
+
+.snake-btn
+    background-color $color-grean
+    border none
+    color $color-white
+    padding 15px 32px
+    text-align center
+    text-decoration none
+    display inline-block
+    outline none
+    cursor pointer
+    transition background 0.3s $transition-bezier
+    font-size $font-size-base
+    white-space nowrap
+    &:active
+        background-color $color-dark-grean
+    &[disabled]
+        background $color-gray

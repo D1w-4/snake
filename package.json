@@ -1,0 +1,30 @@
+{
+  "name": "snake",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "webpack-dev-server --config utils/webpack-config.dev.js --color --progress",
+    "build": "webpack --config utils/webpack-config.base.js"
+  },
+  "devDependencies": {
+    "@webcomponents/custom-elements": "^1.1.0",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "optimist": "^0.6.1",
+    "raw-loader": "^0.5.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "ts-loader": "3.5.0",
+    "tslib": "^1.9.0",
+    "typescript": "^2.8.3",
+    "webpack": "3.11.0",
+    "webpack-dev-server": "2.11.1",
+    "webpack-merge": "^4.1.2",
+    "style-loader": "^0.21.0",
+    "tslint": "^5.10.0",
+    "tslint-eslint-rules": "5.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
